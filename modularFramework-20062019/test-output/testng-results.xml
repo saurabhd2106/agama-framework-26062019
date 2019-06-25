@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="19751" started-at="2019-06-25T18:10:01Z" finished-at="2019-06-25T18:10:21Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="19751" started-at="2019-06-25T18:10:01Z" finished-at="2019-06-25T18:10:21Z">
+      <class name="in.amazon.test.HomepageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:in.amazon.test.HomepageTest@475530b9]" name="setup" is-config="true" duration-ms="10476" started-at="2019-06-25T18:10:01Z" finished-at="2019-06-25T18:10:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifySearchProduct()[pri:0, instance:in.amazon.test.HomepageTest@475530b9]" name="verifySearchProduct" duration-ms="8102" started-at="2019-06-25T18:10:12Z" finished-at="2019-06-25T18:10:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchProduct -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:in.amazon.test.HomepageTest@475530b9]" name="closeBrowser" is-config="true" duration-ms="1104" started-at="2019-06-25T18:10:20Z" finished-at="2019-06-25T18:10:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- in.amazon.test.HomepageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
