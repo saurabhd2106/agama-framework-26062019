@@ -1,25 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+<testng-results skipped="3" failed="1" ignored="0" total="5" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="24834" started-at="2019-06-26T17:08:29Z" finished-at="2019-06-26T17:08:54Z">
+  <suite name="Suite" duration-ms="12909" started-at="2019-06-26T19:48:13Z" finished-at="2019-06-26T19:48:26Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="24834" started-at="2019-06-26T17:08:29Z" finished-at="2019-06-26T17:08:54Z">
+    <test name="Test" duration-ms="12909" started-at="2019-06-26T19:48:13Z" finished-at="2019-06-26T19:48:26Z">
       <class name="in.amazon.test.HomepageTest">
-        <test-method status="PASS" signature="preSetup()[pri:0, instance:in.amazon.test.HomepageTest@66a3ffec]" name="preSetup" is-config="true" duration-ms="490" started-at="2019-06-26T17:08:28Z" finished-at="2019-06-26T17:08:29Z">
+        <test-method status="PASS" signature="preSetup()[pri:0, instance:in.amazon.test.HomepageTest@27efef64]" name="preSetup" is-config="true" duration-ms="363" started-at="2019-06-26T19:48:13Z" finished-at="2019-06-26T19:48:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preSetup -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:in.amazon.test.HomepageTest@66a3ffec]" name="setup" is-config="true" duration-ms="13906" started-at="2019-06-26T17:08:29Z" finished-at="2019-06-26T17:08:43Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:in.amazon.test.HomepageTest@27efef64]" name="setup" is-config="true" duration-ms="6247" started-at="2019-06-26T19:48:13Z" finished-at="2019-06-26T19:48:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifySearchProduct()[pri:0, instance:in.amazon.test.HomepageTest@66a3ffec]" name="verifySearchProduct" duration-ms="8851" started-at="2019-06-26T17:08:43Z" finished-at="2019-06-26T17:08:52Z">
+        <test-method status="PASS" signature="verifySearchProduct()[pri:0, instance:in.amazon.test.HomepageTest@27efef64]" name="verifySearchProduct" duration-ms="3085" started-at="2019-06-26T19:48:19Z" finished-at="2019-06-26T19:48:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchProduct -->
-        <test-method status="FAIL" signature="verifyTitleOfThePage()[pri:0, instance:in.amazon.test.HomepageTest@66a3ffec]" name="verifyTitleOfThePage" duration-ms="27" started-at="2019-06-26T17:08:52Z" finished-at="2019-06-26T17:08:52Z">
+        <test-method status="PASS" signature="afterAMethod(org.testng.ITestResult)[pri:0, instance:in.amazon.test.HomepageTest@27efef64]" name="afterAMethod" is-config="true" duration-ms="7" started-at="2019-06-26T19:48:23Z" finished-at="2019-06-26T19:48:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySearchProduct status=SUCCESS method=HomepageTest.verifySearchProduct()[pri:0, instance:in.amazon.test.HomepageTest@27efef64] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterAMethod -->
+        <test-method status="SKIP" signature="verifyTitleOfThePage()[pri:0, instance:in.amazon.test.HomepageTest@27efef64]" name="verifyTitleOfThePage" duration-ms="196" started-at="2019-06-26T19:48:23Z" finished-at="2019-06-26T19:48:23Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Amazon Home Page] but found [Amazon.in: Apple watch: Electronics]]]>
@@ -32,7 +43,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:137)
 at org.testng.Assert.assertEquals(Assert.java:118)
 at org.testng.Assert.assertEquals(Assert.java:453)
 at org.testng.Assert.assertEquals(Assert.java:463)
-at in.amazon.test.HomepageTest.verifyTitleOfThePage(HomepageTest.java:32)
+at in.amazon.test.HomepageTest.verifyTitleOfThePage(HomepageTest.java:34)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -64,11 +75,190 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTitleOfThePage -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:in.amazon.test.HomepageTest@66a3ffec]" name="cleanUp" is-config="true" duration-ms="1965" started-at="2019-06-26T17:08:52Z" finished-at="2019-06-26T17:08:54Z">
+        <test-method status="PASS" signature="afterAMethod(org.testng.ITestResult)[pri:0, instance:in.amazon.test.HomepageTest@27efef64]" name="afterAMethod" is-config="true" duration-ms="2" started-at="2019-06-26T19:48:23Z" finished-at="2019-06-26T19:48:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTitleOfThePage status=SKIP method=HomepageTest.verifyTitleOfThePage()[pri:0, instance:in.amazon.test.HomepageTest@27efef64] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterAMethod -->
+        <test-method status="SKIP" signature="verifyTitleOfThePage()[pri:0, instance:in.amazon.test.HomepageTest@27efef64]" name="verifyTitleOfThePage" duration-ms="199" started-at="2019-06-26T19:48:23Z" finished-at="2019-06-26T19:48:23Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Amazon Home Page] but found [Amazon.in: Apple watch: Electronics]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Amazon Home Page] but found [Amazon.in: Apple watch: Electronics]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at in.amazon.test.HomepageTest.verifyTitleOfThePage(HomepageTest.java:34)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitleOfThePage -->
+        <test-method status="PASS" signature="afterAMethod(org.testng.ITestResult)[pri:0, instance:in.amazon.test.HomepageTest@27efef64]" name="afterAMethod" is-config="true" duration-ms="0" started-at="2019-06-26T19:48:23Z" finished-at="2019-06-26T19:48:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTitleOfThePage status=SKIP method=HomepageTest.verifyTitleOfThePage()[pri:0, instance:in.amazon.test.HomepageTest@27efef64] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterAMethod -->
+        <test-method status="SKIP" signature="verifyTitleOfThePage()[pri:0, instance:in.amazon.test.HomepageTest@27efef64]" name="verifyTitleOfThePage" duration-ms="139" started-at="2019-06-26T19:48:23Z" finished-at="2019-06-26T19:48:23Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Amazon Home Page] but found [Amazon.in: Apple watch: Electronics]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Amazon Home Page] but found [Amazon.in: Apple watch: Electronics]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at in.amazon.test.HomepageTest.verifyTitleOfThePage(HomepageTest.java:34)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitleOfThePage -->
+        <test-method status="PASS" signature="afterAMethod(org.testng.ITestResult)[pri:0, instance:in.amazon.test.HomepageTest@27efef64]" name="afterAMethod" is-config="true" duration-ms="1" started-at="2019-06-26T19:48:23Z" finished-at="2019-06-26T19:48:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTitleOfThePage status=SKIP method=HomepageTest.verifyTitleOfThePage()[pri:0, instance:in.amazon.test.HomepageTest@27efef64] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterAMethod -->
+        <test-method status="FAIL" signature="verifyTitleOfThePage()[pri:0, instance:in.amazon.test.HomepageTest@27efef64]" name="verifyTitleOfThePage" duration-ms="121" started-at="2019-06-26T19:48:23Z" finished-at="2019-06-26T19:48:23Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Amazon Home Page] but found [Amazon.in: Apple watch: Electronics]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Amazon Home Page] but found [Amazon.in: Apple watch: Electronics]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at in.amazon.test.HomepageTest.verifyTitleOfThePage(HomepageTest.java:34)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitleOfThePage -->
+        <test-method status="PASS" signature="afterAMethod(org.testng.ITestResult)[pri:0, instance:in.amazon.test.HomepageTest@27efef64]" name="afterAMethod" is-config="true" duration-ms="524" started-at="2019-06-26T19:48:23Z" finished-at="2019-06-26T19:48:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTitleOfThePage status=FAILURE method=HomepageTest.verifyTitleOfThePage()[pri:0, instance:in.amazon.test.HomepageTest@27efef64] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterAMethod -->
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:in.amazon.test.HomepageTest@27efef64]" name="cleanUp" is-config="true" duration-ms="2272" started-at="2019-06-26T19:48:24Z" finished-at="2019-06-26T19:48:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
       </class> <!-- in.amazon.test.HomepageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

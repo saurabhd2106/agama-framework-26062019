@@ -6,6 +6,7 @@
       <class name="in.amazon.test.HomepageTest">
         <methods>
           <include name="verifyTitleOfThePage"/>
+          <include name="afterAMethod"/>
           <include name="setup"/>
           <include name="preSetup"/>
           <include name="cleanUp"/>
