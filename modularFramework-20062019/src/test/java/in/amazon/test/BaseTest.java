@@ -76,8 +76,7 @@ public class BaseTest {
 	@AfterMethod
 	public void afterAMethod(ITestResult result) throws Exception {
 		String testcaseName = result.getName();
-		screenshotName = String.format("%s/screenshots/%s_%s.jpeg", currentWorkingDirectory, testcaseName,
-				testExecutionStartTime);
+		
 
 		if (result.getStatus() == ITestResult.SUCCESS) {
 
@@ -86,6 +85,8 @@ public class BaseTest {
 
 			extentTest.fail("Test case Failed : " + testcaseName);
 
+			screenshotName = String.format("%s/screenshots/%s_%s.jpeg", currentWorkingDirectory, testcaseName,
+					testExecutionStartTime);
 			screenshotControl.saveAndCaptureScreenshot(screenshotName);
 			extentTest.addScreenCaptureFromPath(screenshotName);
 

@@ -188,7 +188,7 @@ public class ExcelDriver {
 
 		excelWorkbook.write(fileWriter);
 
-		fileReader.close();
+		fileWriter.close();
 	}
 
 	public void saveAsFile(String newExcelFilename) throws Exception {
