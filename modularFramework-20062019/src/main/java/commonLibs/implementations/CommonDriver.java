@@ -1,11 +1,14 @@
 package commonLibs.implementations;
 
+import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 import commonLibs.contracts.IDriver;
 
@@ -52,7 +55,28 @@ public class CommonDriver implements IDriver {
 
 			driver = new EdgeDriver();
 
-		} else {
+		} else if (browserType.equalsIgnoreCase("remote-chrome")) {
+
+			ChromeOptions options = new ChromeOptions();
+
+			options.addArguments("platform=any");
+
+			URL hubUrl = new URL("http://192.168.1.9:12212/wd/hub");
+
+			driver = new RemoteWebDriver(hubUrl, options);
+		} else if (browserType.equalsIgnoreCase("chrome-headless")) {
+			System.setProperty("webdriver.chrome.driver",
+					"C:/Users/Saurabh Dhingra/workspace/libs/chromedriver-04052019/chromedriver.exe");
+
+			ChromeOptions options = new ChromeOptions();
+
+			options.addArguments("--headless");
+
+			driver = new ChromeDriver(options);
+
+		}
+
+		else {
 			throw new Exception("Invalid Browser type : " + browserType);
 		}
 

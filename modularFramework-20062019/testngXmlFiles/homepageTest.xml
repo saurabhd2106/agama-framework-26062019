@@ -4,9 +4,9 @@
 	<listeners>
 		<listener class-name="analyzer.TranformationalAnalyzer"></listener>
 	</listeners>
-	<test name="Test">
+	<test name="Chrome Testing">
 		<classes>
 			<class name="in.amazon.test.HomepageTest" />
 		</classes>
-	</test> <!-- Test -->
+	</test> <!-- Test -->	
 </suite> <!-- Suite -->

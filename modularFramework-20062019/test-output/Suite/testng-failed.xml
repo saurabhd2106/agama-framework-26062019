@@ -4,7 +4,7 @@
   <listeners>
     <listener class-name="analyzer.TranformationalAnalyzer"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="Chrome Testing(failed)">
     <classes>
       <class name="in.amazon.test.HomepageTest">
         <methods>
@@ -16,5 +16,5 @@
         </methods>
       </class> <!-- in.amazon.test.HomepageTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Chrome Testing(failed) -->
 </suite> <!-- Failed suite [Suite] -->
